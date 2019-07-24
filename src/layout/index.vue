@@ -1,16 +1,17 @@
 <template>
     <div class="app-wrapper">
-        我是layout
+        <!--左侧导航-->
+        <Sidebar class="sidebar-container" />
     </div>
 </template>
 
 <script>
-// import { Button, Row } from "element-ui";
-// import Vue from 'vue'
-// Vue.use(Button)
-// Vue.use(Row)
+import { Sidebar } from './components'
 export default {
   name: 'Layout',
+  components: {
+    Sidebar
+  },
   data() {
     return {
 

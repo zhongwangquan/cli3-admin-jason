@@ -13,18 +13,12 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/login',
-      name: 'login', // 命名路由
-      component: layout
-    },
-    {
       path: '/',
-      name: 'layout',
-      redirect: '/dashboard',  
+      component: layout,
+    //   redirect: '/dashboard',  
     },
     {
       path: '/dashboard',
-      name: 'dashboard',
       component: dashboard
     },
     {
